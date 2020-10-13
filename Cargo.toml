@@ -6,6 +6,7 @@ edition = "2018"
 readme = "README.md"
 license = "GPL-3.0"
 keywords = ["text", "string"]
+description = "Return a string with random letters capitolized."
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
