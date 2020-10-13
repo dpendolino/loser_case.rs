@@ -25,7 +25,7 @@ pub fn to_loser(x: &str) -> String {
             d.to_ascii_lowercase()
         });
     }
-    return r;
+    r
 }
 
 #[cfg(test)]
