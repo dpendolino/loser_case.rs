@@ -1,12 +1,13 @@
 [package]
 name = "loser_case"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["Daniel Pendolino <daniel@counterhack.com>"]
 edition = "2018"
 readme = "README.md"
 license = "GPL-3.0"
 keywords = ["text", "string"]
 description = "Return a string with random letters capitolized."
+repository = "https://github.com/dpendolino/loser_case.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
