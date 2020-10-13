@@ -17,15 +17,17 @@ use std::str;
 /// ```
 pub fn to_loser(x: &str) -> String {
     let mut rng = rand::thread_rng();
-    let mut r = String::with_capacity(x.len());
-    for d in x.chars() {
-        r.push(if rng.gen_range(0, 10) > 5 {
-            d.to_ascii_uppercase()
-        } else {
-            d.to_ascii_lowercase()
-        });
-    }
-    r
+    let vector = x
+        .chars()
+        .map(|a| {
+            if rng.gen_range(0, 10) > 5 {
+                a.to_ascii_uppercase()
+            } else {
+                a.to_ascii_lowercase()
+            }
+        })
+        .collect::<String>();
+    vector
 }
 
 #[cfg(test)]

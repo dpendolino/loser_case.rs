@@ -1,6 +1,6 @@
 [package]
 name = "loser_case"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Daniel Pendolino <daniel@counterhack.com>"]
 edition = "2018"
 readme = "README.md"
