@@ -17,7 +17,7 @@ use std::str;
 /// ```
 pub fn to_loser(x: &str) -> String {
     let mut rng = rand::thread_rng();
-    let vector = x
+    let loser: String = x
         .chars()
         .map(|a| {
             if rng.gen_range(0, 10) > 5 {
@@ -26,8 +26,8 @@ pub fn to_loser(x: &str) -> String {
                 a.to_ascii_lowercase()
             }
         })
-        .collect::<String>();
-    vector
+        .collect();
+    loser
 }
 
 #[cfg(test)]
